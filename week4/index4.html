@@ -11,7 +11,7 @@
 
     <h1>Registration Form</h1>
 
-    <form>
+    <>
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -26,7 +26,97 @@
         <input type="password" id="password" name="password" required>
 
         <br><br>
-    </form>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <p>Choose Your Skills:</p>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="">Choose a course</option>
+            <option value="CSE">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="ECE">Electronics</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+
+        </form>
+
+        <h2>Upcoming Events</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Web Development Workshop</td>
+                    <td>10 November 2026</td>
+                    <td>Computer Lab</td>
+                </tr>
+
+                <tr>
+                    <td>Coding Competition</td>
+                    <td>15 November 2026</td>
+                    <td>Seminar Hall</td>
+                </tr>
+
+                <tr>
+                    <td>Tech Fest</td>
+                    <td>20 November 2026</td>
+                    <td>Main Auditorium</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Events: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+
 
 </body>
 
