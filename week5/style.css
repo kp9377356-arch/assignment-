@@ -1,7 +1,35 @@
-/* Task 5.1: Initial CSS styling */
+/* 1. Universal Selector (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     background-color: #f8fafc;
-    color: #0f172a;
     padding: 20px;
+}
+
+/* 2. Element Selector (h1) */
+h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* 3. ID Selector (#hero) */
+#hero {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* 4. Class Selector (.card) */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
 }
