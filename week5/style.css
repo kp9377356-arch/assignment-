@@ -1,0 +1,7 @@
+/* Task 5.1: Initial CSS styling */
+body {
+    font-family: sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    padding: 20px;
+}
