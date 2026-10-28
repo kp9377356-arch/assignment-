@@ -10,89 +10,16 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
-    padding: 20px;
     color: #333;
 }
 
-.cards-container {
+/* Task 6.4: Sticky Top Bar Header */
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1e293b;
+    color: #ffffff;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-/* Task 6.2: Card Component Base */
-.profile-card {
-    width: 260px;
-    padding: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 12px;
-}
-
-.profile-card h3 {
-    margin-bottom: 4px;
-    font-size: 1.2rem;
-}
-
-.profile-card .role {
-    font-size: 0.85rem;
-    color: #6b7280;
-    margin-bottom: 12px;
-}
-
-/* Task 6.3: Fixed height and scrollable bio box */
-.bio-box {
-    height: 90px;
-    /* Fixed height */
-    overflow-y: auto;
-    /* Scrollbar for extra content */
-    padding: 8px;
-    background-color: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
-    text-align: left;
-}
-
-.bio-box p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    color: #4b5563;
-}
-
-/* Task 6.2: Color Variations */
-.card--blue {
-    border-color: #2563eb;
-}
-
-.card--blue .avatar {
-    box-shadow: 0 0 0 3px #2563eb;
-}
-
-.card--green {
-    border-color: #16a34a;
-}
-
-.card--green .avatar {
-    box-shadow: 0 0 0 3px #16a34a;
-}
-
-.card--purple {
-    border-color: #9333ea;
-}
-
-.card--purple .avatar {
-    box-shadow: 0 0 0 3px #9333ea;
+    justify-content: space-between;
 }
