@@ -11,6 +11,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8fafc;
     color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ==========================================
@@ -23,6 +26,9 @@ body {
     background-color: #1e293b;
     padding: 16px 32px;
     color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar__logo a {
@@ -70,16 +76,16 @@ body {
 }
 
 /* ==========================================
-   Task 7.2: Centered Hero Banner (Flexbox)
+   Task 7.2: Centered Hero Banner
    ========================================== */
 .banner {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: #ffffff;
 }
@@ -136,12 +142,13 @@ body {
 }
 
 /* ==========================================
-   Task 7.3: Responsive Cards Row (flex-wrap & flex: 1 1 200px)
+   Task 7.3: Features Section & Flex Cards
    ========================================== */
 .features {
     padding: 60px 20px;
     max-width: 1100px;
     margin: 0 auto;
+    flex: 1;
 }
 
 .features__heading {
@@ -154,13 +161,11 @@ body {
 .cards-row {
     display: flex;
     flex-wrap: wrap;
-    /* Wrap items on smaller screens */
     gap: 20px;
 }
 
 .feature-card {
     flex: 1 1 200px;
-    /* grow: 1, shrink: 1, basis: 200px */
     background-color: #ffffff;
     padding: 24px;
     border-radius: 8px;
@@ -178,4 +183,39 @@ body {
     font-size: 0.95rem;
     color: #475569;
     line-height: 1.5;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* ==========================================
+   Task 7.4: Responsive Media Queries
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .navbar__right {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .navbar__links {
+        gap: 16px;
+    }
+
+    .banner__title {
+        font-size: 2rem;
+    }
 }
