@@ -76,11 +76,8 @@ body {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    /* Column orientation */
     justify-content: center;
-    /* Vertical center */
     align-items: center;
-    /* Horizontal center */
     text-align: center;
     padding: 40px 20px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -136,4 +133,49 @@ body {
 
 .banner__btn--secondary:hover {
     background-color: #334155;
+}
+
+/* ==========================================
+   Task 7.3: Responsive Cards Row (flex-wrap & flex: 1 1 200px)
+   ========================================== */
+.features {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.features__heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap items on smaller screens */
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1 1 200px;
+    /* grow: 1, shrink: 1, basis: 200px */
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #0284c7;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.5;
 }
